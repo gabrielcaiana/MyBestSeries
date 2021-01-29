@@ -3,8 +3,8 @@
 		<div class="overlay">
 			<form @submit.prevent="submit()">
 				<div class="card">
-					<div class="card-header">
-						Login
+					<div class="card-header text-center">
+						<span>Login</span>
 					</div>
 					<div class="card-body">
 					<div class="form-group">
@@ -14,7 +14,7 @@
 							<input type="password" v-model="form.password" class="form-control" placeholder="Senha" required>
 						</div>
 
-						<button class="btn btn-primary w-100">
+						<button class="btn  w-100">
 							Entrar
 						</button>
 					</div>
@@ -70,7 +70,17 @@ export default {
 
 		.form-group {
 			margin-bottom: 16px;
-	}
+		}
+
+		.btn {
+			background: #ee4343;
+			font-weight: bold;
+			color: white;
+
+			&:hover {
+				background: rgb(230, 32, 32)
+			}
+		}
 	}
 }
 </style>
